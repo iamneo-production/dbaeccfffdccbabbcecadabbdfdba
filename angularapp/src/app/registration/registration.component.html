@@ -6,7 +6,7 @@
     <input type="text" id="username" [(ngModel)]="username" name="username" [ngModelOptions]="{standalone: true}" required
            #usernameNgModel="ngModel">
     <div *ngIf="usernameNgModel.invalid && (usernameNgModel.dirty || usernameNgModel.touched)"
-         class="error-message">Username is required</div>
+         class="error-message">Username is req</div>
 
     <label for="password">Password:</label>
     <input type="password" id="password" [(ngModel)]="password" name="password" [ngModelOptions]="{standalone: true}" required
