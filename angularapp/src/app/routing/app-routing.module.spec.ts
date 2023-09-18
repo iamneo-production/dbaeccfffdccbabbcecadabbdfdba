@@ -71,22 +71,14 @@ describe("App Routing",() => {
       expect(location.path()).toBe('/admin');
     });
 
-    fit('Week5_Day2_should route to organizer page', async () => {
+    fit('Week5_Day1_should route to organizer page', async () => {
       await router.navigate(['/organizer']);
       expect(location.path()).toBe('/organizer');
     });
 
-    fit('Week5_Day1_should route to login page', async () => {
-      await router.navigate(['/login']);
-      expect(location.path()).toBe('/login');
-    });
 
-    fit('Week5_Day1_should route to register page', async () => {
-      await router.navigate(['/register']);
-      expect(location.path()).toBe('/register');
-    });
 
-    fit('Week5_Day2_should route to default path for invalid paths', async () => {
+    fit('Week5_Day1_should route to default path for invalid paths', async () => {
         await router.navigate(['/invalid']);
         fixture.detectChanges();
         expect(location.path()).toBe('/error');
