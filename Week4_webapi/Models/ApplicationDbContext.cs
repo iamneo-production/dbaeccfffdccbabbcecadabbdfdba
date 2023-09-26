@@ -10,9 +10,8 @@ namespace Week4_webapi.Models
         {
         }
 
-        public DbSet<User> Users { get; set; }
         public DbSet<Team> Teams { get; set; }
-        public DbSet<Player> Players { get; set; }
+       
 
         // Add DbSet properties for other entities as needed
     }
